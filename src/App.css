@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Sansita+Swashed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.poster {
+  height: 550px;
+  background: url(./hot-onion-restaurent-resources/bannerbackground.png) no-repeat;
+}
+
+.poster .inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.poster .inner h2 {
+  font-size: 55px;
+  font-family: "Sansita Swashed", cursive;
+  color: rgba(10, 9, 9, 0.926);
+  margin-bottom: 14px;
+}
+
+.poster .inner form {
+  margin-top: 15px;
+}
+
+.poster .inner form input {
+  width: 400px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 1px #f50057;
+          box-shadow: 1px 1px 1px #f50057;
+}
+
+.poster .inner form button {
+  padding: 9px 25px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 700px) {
+  .poster {
+    height: 90vh;
+  }
+  .poster .inner h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .poster .inner form {
+    text-align: center;
+  }
+  .poster .inner form input {
+    width: 300px;
+  }
+  .poster .inner form button {
+    width: 100px;
+    margin-top: 10px;
+  }
+}
+
+.navbar {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar .underline {
+  color: black;
+}
+
+.navbar .underline::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f50057;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.navbar .underline:focus {
+  color: #f50057;
+}
+
+.navbar .underline:hover::after {
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.navbar .underline:hover {
+  color: #f50057 !important;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar li a {
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+.foodGrid {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.foodGrid .checkout_btn {
+  display: block;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.foodGrid .item {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foodGrid .item p {
+  text-align: center;
+  font-size: 24px;
+}
+
+.foodGrid .item h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: small;
+}
+
+.foodGrid .item .add_to_cart {
+  font-size: small;
+  color: #f50057;
+}
+
+.ShowOneFood {
+  padding: 50px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ShowOneFood .findOneContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-inner h1 {
+  font-family: "Sansita Swashed", cursive;
+  color: #f50057;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-inner h5 {
+  margin: 10px 0;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 18px;
+  color: #f50057;
+}
+
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-inner p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-calculation {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-calculation h3 {
+  font-size: 35px;
+  margin-right: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-calculation form {
+  margin-left: 30px;
+  border: 1px solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-calculation form h4 {
+  margin: auto;
+}
+
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-calculation form .plus {
+  color: #f50057;
+}
+
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-calculation form .plus,
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-calculation form .minus {
+  cursor: pointer;
+}
+
+.ShowOneFood .findOneContainer .findOneItemDesc .FoodDetails-calculation form button {
+  padding: 5px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  outline: none;
+}
+
+.ShowOneFood .findOneContainer .findOneItemImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  .FoodDetails-calculation h3 {
+    margin: auto auto auto 0;
+    font-size: 21px !important;
+  }
+}
+
+.review {
+  height: 100vh;
+  width: 100vw;
+}
+
+.review .inner {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review .inner .ReviewForm {
+  padding: 40px 0;
+}
+
+.review .inner .ReviewForm .divider {
+  margin-top: 10px;
+  height: 1px;
+  width: 100%;
+  background-color: grey;
+}
+
+.review .inner .ReviewForm .form h1 {
+  color: #f50057;
+  font-size: 35px;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.review .inner .ReviewForm .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review .inner .ReviewForm .cart .item_cart h3 {
+  color: #f50057;
+  font-size: 30px;
+}
+
+.review .inner .ReviewForm .cart .item_cart .place_order_btn {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.review .inner .ReviewForm .cart .item_cart p {
+  margin-bottom: 5px;
+}
+
+.review .inner .ReviewForm .cart .item_cart .cart-details {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #ece9e9;
+  height: 120px;
+  width: 450px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.review .inner .ReviewForm .cart .item_cart .cart-details img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.review .inner .ReviewForm .cart .item_cart .cart-details .cart-details-price {
+  padding-left: 10px;
+  -webkit-box-flex: 2.5;
+      -ms-flex: 2.5;
+          flex: 2.5;
+  margin: auto;
+}
+
+.review .inner .ReviewForm .cart .item_cart .cart-details .cart-details-price .title {
+  color: #f50057 !important;
+}
+
+.review .inner .ReviewForm .cart .item_cart .cart-details .btn-details-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.review .inner .ReviewForm .cart .item_cart .cart-details .btn-details-price p {
+  font-weight: 600;
+  margin: auto;
+  background: #fbf7f7;
+  padding: 2px 3px;
+}
+
+.review .inner .ReviewForm .cart .item_cart .cart-details .btn-details-price button {
+  font-size: 20px;
+  outline: none;
+  width: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.review .inner .ReviewForm .cart .item_cart .cart-details .details-price-icon {
+  margin: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .review .inner .ReviewForm .cart {
+    text-align: center;
+  }
+}
+
+.WhyYouChooseUs {
+  margin-top: 15px;
+}
+
+.WhyYouChooseUs h3 {
+  font-size: 45px;
+  margin-bottom: 15px;
+  font-family: "Sansita Swashed", cursive;
+  text-align: center;
+}
+
+.WhyYouChooseUs p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 25px;
+}
+
+.knowMoreCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0 15px 0 !important;
+}
+
+.footer {
+  background-color: #070606;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer .footer-inner {
+  width: 75%;
+  margin: auto;
+}
+
+.footer .footer-inner .footer-top {
+  padding: 50px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-inner .footer-top ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.footer .footer-inner .footer-top ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .footer-inner .footer-top ul li a:hover {
+  color: #f50057;
+}
+
+.footer .footer-inner .footer-top .footer-top-img {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.footer .footer-inner .footer-top .footer-top-img img {
+  height: 40px;
+  width: 100px;
+}
+
+.footer .footer-inner .footer-top .ul1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer .footer-inner .footer-top .ul2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer .footer-bottom {
+  width: 90%;
+  margin-bottom: auto;
+  padding: 10px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-bottom .footer-bottom-a {
+  margin-left: auto;
+}
+
+.footer .footer-bottom .footer-bottom-a a {
+  color: white;
+}
+
+.footer .footer-bottom a {
+  margin-left: 20px;
+}
+
+.errorSpan {
+  color: #f50057;
+}
+/*# sourceMappingURL=App.css.map */

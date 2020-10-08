@@ -1,0 +1,73 @@
+.navbar {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-roboto;
+  .underline {
+    color: black;
+    &::after {
+      content: "";
+      display: block;
+
+      width: 0;
+      height: 2px;
+      background: $secondary;
+      transition: width 0.3s;
+    }
+    &:focus {
+      color: $secondary;
+    }
+
+    &:hover::after {
+      bottom: 0;
+      left: 50%;
+      width: 100%;
+      transition: width 0.3s;
+    }
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    flex-direction: row;
+
+    a {
+      text-decoration: none;
+      padding: 0 20px;
+      font-size: 15px;
+    }
+  }
+}
+.foodGrid {
+  padding: 40px;
+  display: flex;
+
+  .checkout_btn {
+    display: block;
+    margin-top: 20px;
+    width: 300px;
+  }
+  .item {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+      font-size: 24px;
+    }
+    h2 {
+      margin-top: 10px;
+      text-align: center;
+      font-size: small;
+    }
+    .add_to_cart {
+      font-size: small;
+      color: $secondary;
+    }
+  }
+}

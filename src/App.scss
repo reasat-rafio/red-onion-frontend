@@ -1,0 +1,36 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Sansita+Swashed&display=swap");
+
+$font-roboto: "Roboto", sans-serif;
+$font-sansita: "Sansita Swashed", cursive;
+
+$primary: #faf0e6;
+$secondary: #f50057;
+$white: #ece9e9;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Poster
+@import "./Components/Body/Poster/poster";
+
+// FoodOutPut
+@import "./Components/Body/FoodOutPut/foodoutput";
+
+// FindOneFoodItem
+@import "./Components/ShowOneFood/showonefood";
+
+// Review
+@import "./Components/Review/review";
+
+// WhyYouChooseUs
+@import "./Components/WhyYouChooseUs/whyYouChooseUs";
+
+// Footer
+@import "./Components/Footer/footer";
+
+// login & signUp
+@import "./Components/Login&SignUp/login&singUp";
